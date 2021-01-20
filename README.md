@@ -38,7 +38,7 @@ JSL 팀 프로젝트
 
 #### 2. 상품리스트 출력
 
-```
+```java
 public List<PageVO> PListSelect(PageVO pVo) {
 		String sql = "select * from product order by PSDate desc";
 		List<PageVO> list = new ArrayList<PageVO>();
@@ -75,7 +75,7 @@ public List<PageVO> PListSelect(PageVO pVo) {
 
 #### 3. 상품 및 카테고리 검색 및 정렬
 
-```		
+```java		
 // 상품 검색할 경우
 if (search1 != null) {
 	// 이름 순서대로 정렬할 경우
