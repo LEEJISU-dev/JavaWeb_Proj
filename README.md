@@ -35,48 +35,11 @@ JSL 팀 프로젝트
 
 ![1](https://user-images.githubusercontent.com/67365433/104911160-c4366900-59cd-11eb-9961-4da8b807c176.png)
 
+#### 2. 상품 및 카테고리 검색 및 정렬
 
-#### 2. 상품리스트 출력
-
-```java
-public List<PageVO> PListSelect(PageVO pVo) {
-		String sql = "select * from product order by PSDate desc";
-		List<PageVO> list = new ArrayList<PageVO>();
-		Connection conn = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		try {
-			conn = DBManager.getConnection();
-			pstmt = conn.prepareStatement(sql);
-			rs = pstmt.executeQuery();
-
-			while (rs.next()) {
-				PageVO pVo1 = new PageVO();
-
-				pVo1.setPName(rs.getString("PName"));
-				pVo1.setPPhoto(rs.getString("PPhoto"));
-				pVo1.setPPrice(rs.getString("PPrice"));
-				pVo1.setPSId(rs.getString("PSId"));
-				pVo1.setPSDate(rs.getTimestamp("PSDate"));
-				pVo1.setPNo(rs.getInt("PNo"));
-				pVo1.setPSelled(rs.getInt("PSelled"));
-				pVo1.setPClass1(rs.getString("PClass1"));
-				pVo1.setPClass2(rs.getString("PClass2"));
-				list.add(pVo1);
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} finally {
-			DBManager.close(conn, pstmt, rs);
-		}
-		return list;
-	}
-```
-
-#### 3. 상품 및 카테고리 검색 및 정렬
-
-[동영상](https://user-images.githubusercontent.com/67365433/105308073-f92a0200-5bff-11eb-8699-fb51d07bc4f0.mp4)
-
+[이름 및 카테고리명 검색](https://user-images.githubusercontent.com/67365433/105313333-3b077800-5c01-11eb-817e-c71e9f381450.mp4)
+[카테고리 검색](https://user-images.githubusercontent.com/67365433/105313971-61c5ae80-5c01-11eb-85ca-2ed40e6358f5.mp4)
+[상품정렬](https://user-images.githubusercontent.com/67365433/105314283-73a75180-5c01-11eb-90cf-d706c8e1f108.mp4)
 
 ```java		
 // 상품 검색할 경우
