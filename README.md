@@ -38,7 +38,9 @@ JSL 팀 프로젝트
 #### 2. 상품 및 카테고리 검색 및 정렬
 
 [이름 및 카테고리명 검색](https://user-images.githubusercontent.com/67365433/105313333-3b077800-5c01-11eb-817e-c71e9f381450.mp4)
+
 [카테고리 검색](https://user-images.githubusercontent.com/67365433/105313971-61c5ae80-5c01-11eb-85ca-2ed40e6358f5.mp4)
+
 [상품정렬](https://user-images.githubusercontent.com/67365433/105314283-73a75180-5c01-11eb-90cf-d706c8e1f108.mp4)
 
 ```java		
