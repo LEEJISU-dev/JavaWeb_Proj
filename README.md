@@ -75,6 +75,9 @@ public List<PageVO> PListSelect(PageVO pVo) {
 
 #### 3. 상품 및 카테고리 검색 및 정렬
 
+https://user-images.githubusercontent.com/67365433/105308073-f92a0200-5bff-11eb-8699-fb51d07bc4f0.mp4
+
+
 ```java		
 // 상품 검색할 경우
 if (search1 != null) {
@@ -145,3 +148,7 @@ if (search1 != null) {
 	}
 }
 ```
+
+### 보완점
+- 예외처리의 부족
+- 실제 결제처리
