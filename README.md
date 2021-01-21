@@ -75,7 +75,7 @@ public List<PageVO> PListSelect(PageVO pVo) {
 
 #### 3. 상품 및 카테고리 검색 및 정렬
 
-https://user-images.githubusercontent.com/67365433/105308073-f92a0200-5bff-11eb-8699-fb51d07bc4f0.mp4
+[동영상][https://user-images.githubusercontent.com/67365433/105308073-f92a0200-5bff-11eb-8699-fb51d07bc4f0.mp4]
 
 
 ```java		
